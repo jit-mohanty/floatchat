@@ -188,14 +188,14 @@ export function MeasurementViewer({ profile, isOpen, onClose }: MeasurementViewe
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="w-full h-full p-0 m-0" style={{
-        width: `${dialogSize.width}vw !important`,
-        maxWidth: `${dialogSize.width}vw !important`,
-        height: `${dialogSize.height}vh !important`,
-        maxHeight: `${dialogSize.height}vh !important`,
-        resize: 'both',
-        overflow: 'auto'
-      }}>
+      <DialogContent
+  className="!max-w-none w-[95vw] h-[95vh] p-0 m-0"
+  style={{
+    resize: 'both',
+    overflow: 'auto'
+  }}
+>
+
         {/* Header */}
         <div className="flex items-center justify-between p-6 pb-4">
           <div className="space-y-1">
